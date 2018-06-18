@@ -1,0 +1,86 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div>
+  <div>
+  <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+         <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li class="active"><a href="/about">About us<span class="sr-only">(current)</span></a></li>
+        <li><a href="/post">Post Me</a></li>
+      </ul>
+</nav>
+</div>
+  <br/>
+  <div class="jumbotron">
+    <center><strong><font size = "10">Gallery</font></strong></center>
+  <p>
+    <center>
+    <img src="/images/movie.png" height="500" width="500">
+
+    <p ><strong>
+      Description: </strong><h3 style="font-family: monospace; width: 800px;
+    margin: auto; 
+    background-color:rgba(255,0,0,0.3); "" >
+      <ul>
+        <li>This project was created by using html, javascript and jquery. my goal was to achieve two things:</li>
+        <li>This is my first time using API. And this is my one of the goal to achieve where I can get the reference of the hollywood movies. I got the Key from OMDB API site.$.ajax({
+                         type: "GET",
+                         url: 'http://www.omdbapi.com/?apikey=6e408513&',
+                         data: {
+                              t: search.value
+                         },
+                         dataType: "json", This specific code worked connected to the OMDB page to get the reference of the movie </li>
+                         <li> Second thing I did to created a search bar in order for the user to search their's desirable movie. Even if you put few letters of the movie you want, the search bar will show the result, instead putting whole word for the movie. The code I used for specific for this is  if($("#movieSearcher").val() == ""){
+                    $("#movie-title").html("Movie Title");
+                    $("#poster").attr("src", "");
+                    $('#para').html(""). </li>
+      </ul></h3>
+      <p>
+        <center>
+          <img src="/images/jukebox.png" height="500" width="500">
+
+        </center>
+      </p>
+      <p>
+        <strong>
+          Description:
+        </strong> <h4 style="font-family: monospace; width: 800px;  margin: auto; 
+    background-color:rgba(255,0,0,0.3)";>
+    <ul>
+      <li>  
+      This project called JUKEBOX, where my goal was to create a music player using API</li>
+
+<li>I build a music player that end up playing any mp3 you can find online. Encapsulate all of this functionality in a JavaScript object so that starting a song is as simple as calling Jukebox.play() I needed an array of song objects and the ability to play, stop and pause a song. I also created Next And previous button to change. Focused on getting the JavaScript to work and the HTML/CSS.
+
+
+      </li>
+    </ul>
+
+        </h4>
+      </p>
+      </p>
+    </p>
+  </center>
+  </p>
+</div>
+  </div>
+  <p><center><a href="/post">
+  <button style=" 
+  background-color: transparent;
+
+  border: dashed;
+    color: purple;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;">Post Me a Message</button>
+</center></p></a>
+</body>
+</html>
